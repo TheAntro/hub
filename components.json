@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.bejamas.com/schema.json",
+  "style": "bejamas-vega",
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/global.css",
+    "baseColor": "mist",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "hugeicons",
+  "rtl": false,
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "menuColor": "inverted",
+  "menuAccent": "subtle",
+  "registries": {}
+}
