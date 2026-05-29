@@ -1,7 +1,11 @@
 ---
 import Base from "@/layouts/Base.astro";
+import { TestButton } from "@/components/TestButton";
 ---
 
 <Base>
-    <h1>Hub</h1>
+    <div class="p-6 space-y-4">
+        <h1 class="text-4xl font-bold px-2 py-1">Hub</h1>
+        <TestButton client:load />
+    </div>
 </Base>
