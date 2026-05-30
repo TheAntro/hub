@@ -10,5 +10,10 @@
   "observability": {
     "enabled": true,
   },
-  "domains": ["hub.antro.dev"],
+  "kv_namespaces": [
+    {
+      "binding": "SESSION",
+      "id": "f5f7790f5e934684aab2ed00ee4e43aa"
+    }
+  ]
 }
