@@ -7,7 +7,7 @@ import {
 
 function Feature({ icon: Icon, text }: { icon: LucideIcon; text: string }) {
   return (
-    <div className="py-4 px-8 flex flex-col place-items-center gap-8 lg:gap-12">
+    <div className="py-4 px-8 flex flex-col place-items-center text-center gap-8 lg:gap-12">
       <Icon aria-hidden="true" className="text-primary w-20 h-20" />
       <p className="text-semibold text-mist-500">{text}</p>
     </div>
