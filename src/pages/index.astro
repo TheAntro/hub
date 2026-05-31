@@ -1,11 +1,22 @@
 ---
 import Base from "@/layouts/Base.astro";
-import { TestButton } from "@/components/TestButton";
+import { Features } from "@/components/Features.tsx";
 ---
 
 <Base>
-    <div class="p-6 space-y-4">
-        <h1 class="text-4xl font-bold px-2 py-1">Hub</h1>
-        <TestButton client:load />
+    <div class="flex flex-col">
+        <div class="p-6 grid h-dvh lg:h-[60dvh] place-items-center">
+            <div class="space-y-6 lg:space-y-12 text-center">
+                <h1
+                    class="text-4xl lg:text-8xl font-bold px-2 py-1 text-mist-300"
+                >
+                    Hub
+                </h1>
+                <p class="text-lg lg:text-2xl text-mist-500">
+                    The one place for your daily things
+                </p>
+            </div>
+        </div>
+        <Features />
     </div>
 </Base>
