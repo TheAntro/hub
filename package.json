@@ -2,7 +2,9 @@
   "name": "@antro/hub",
   "private": true,
   "scripts": {
-    "dev:astro": "pnpm --filter @antro/hub/astro dev",
-    "build:astro": "pnpm --filter @antro/hub/astro build"
+    "dev:astro": "pnpm --filter @antro/hub-astro dev",
+    "dev:hono": "pnpm --filter @antro/hub-hono dev",
+    "build:astro": "pnpm --filter @antro/hub-astro build",
+    "dev": "pnpm --filter \"./apps/**\" --parallel dev"
   }
 }
