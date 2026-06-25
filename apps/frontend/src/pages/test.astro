@@ -1,0 +1,10 @@
+---
+import Base from "@/layouts/Base.astro";
+import { client } from "@/lib/api";
+
+const res = await client.index.$get()
+const { data } = await res.json();
+---
+<Base>
+  <div class="h-screen w-full grid place-items-center"><h1 class="text-5xl">{data}</h1></div>
+</Base>
