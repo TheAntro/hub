@@ -16,7 +16,7 @@ function Feature({ icon: Icon, text }: { icon: LucideIcon; text: string }) {
 
 export function Features() {
   return (
-    <div className="mx-auto flex flex-col justify-between h-dvh py-20 lg:py-0 lg:h-auto lg:flex-row gap-6 lg:gap-8">
+    <div className="mx-auto flex flex-col justify-between py-20 lg:py-0 lg:flex-row gap-6 lg:gap-8">
       <Feature
         icon={CalendarHeart}
         text={"Create aspirational timebound goals for yourself"}
