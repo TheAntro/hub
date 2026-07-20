@@ -3,6 +3,15 @@
   "name": "hub-hono",
   "main": "src/index.ts",
   "compatibility_date": "2026-06-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hub_d1",
+      "database_id": "d385a152-aad6-4a9a-a843-07e03372cc52",
+      "migrations_dir": "./drizzle",
+    },
+  ],
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],

@@ -18,6 +18,12 @@ jobs:
         with:
           version: 10
       - run: pnpm install --frozen-lockfile
+      - name: Apply D1 Migrations
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: d1 migrations apply hub_d1 --remote
+          workingDirectory: apps/backend
       - name: Deploy Hono
         id: hono_deploy
         uses: cloudflare/wrangler-action@v3
